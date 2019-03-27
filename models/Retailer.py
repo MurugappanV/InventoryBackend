@@ -1,4 +1,4 @@
-from base import db
+from .base import db
 
 class Retailer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
