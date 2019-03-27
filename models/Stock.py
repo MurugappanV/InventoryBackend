@@ -1,4 +1,5 @@
 from .base import db
+import datetime
 
 class Stock(db.Model):
     id = db.Column(db.Integer, primary_key=True)
