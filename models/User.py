@@ -9,6 +9,7 @@ class User(db.Model):
     user_logs = db.relationship('OrderLog', backref='user', lazy=True)
     user_sessions = db.relationship('UserSession', backref='user', lazy=True)
     user_stocks = db.relationship('Stock', backref='user', lazy=True)
+    inspections = db.relationship('Inspection', backref='user', lazy=True)
 
     def getPermission(self):
         return PERMISSIONS[self.user_type]
