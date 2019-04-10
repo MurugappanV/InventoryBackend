@@ -1,11 +1,11 @@
 from .base import db
 import datetime
 
-class OrderLog(db.Model):
+class StockLog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.DateTime, default=datetime.datetime.utcnow, nullable=False)
     action = db.Column(db.String(128), nullable=False)
-    order_id = db.Column(db.Integer, db.ForeignKey('order.id'), nullable=False)
+    stock_id = db.Column(db.Integer, db.ForeignKey('stock.id'), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
 #     def getAction(self):
