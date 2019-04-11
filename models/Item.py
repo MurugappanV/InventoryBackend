@@ -17,4 +17,4 @@ class Item(db.Model):
     sub_group_id = db.Column(db.Integer, db.ForeignKey('sub_group.id'), nullable=False)
     item_orders = db.relationship('OrderItem', backref='item', lazy=True)
     item_stocks = db.relationship('StockItem', backref='item', lazy=True)
-    history = db.relationship('ItemHistory', backref='item', lazy=True)
+    # history = db.relationship('ItemHistory', backref='item', lazy=True)
