@@ -4,10 +4,10 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
-    username="Murugappan",
+    username="MVOFFICEMATE",
     password="STQ-n6t-ZGq-fKH",
-    hostname="Murugappan.mysql.pythonanywhere-services.com",
-    databasename="Murugappan$Stationery",
+    hostname="MVOFFICEMATE.mysql.pythonanywhere-services.com",
+    databasename="MVOFFICEMATE$Stationery",
 )
 
 db = None
