@@ -3,11 +3,18 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 
-SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
-    username="MVOFFICEMATE",
-    password="STQ-n6t-ZGq-fKH",
-    hostname="MVOFFICEMATE.mysql.pythonanywhere-services.com",
-    databasename="MVOFFICEMATE$Stationery",
+# SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{username}:{password}@{hostname}/{databasename}".format(
+#     username="MVOFFICEMATE",
+#     password="STQ-n6t-ZGq-fKH",
+#     hostname="MVOFFICEMATE.mysql.pythonanywhere-services.com",
+#     databasename="MVOFFICEMATE$Stationery",
+# )
+
+SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{hostname}/{databasename}".format(
+    username="root",
+    password="",
+    hostname="localhost:3306",
+    databasename="Stationery",
 )
 
 db = None
